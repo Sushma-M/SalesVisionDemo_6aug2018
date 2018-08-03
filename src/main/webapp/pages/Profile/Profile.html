@@ -1,0 +1,34 @@
+<wm-page pagetitle="Profile" name="page1"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="10" name="page_content1"> 
+            <wm-list listclass="list-group" template="true" itemsperrow="xs-1 sm-2 md-3 lg-4" class="list-card" name="RepsList1" dataset="bind:Variables.SalesdbRepsData.dataSet" navigation="None"> 
+                <wm-listtemplate layout="media" name="listtemplate1"> 
+                    <wm-card name="card1"> 
+                        <wm-card-content fontsize="0.8" fontunit="em" name="card_content1"> 
+                            <wm-layoutgrid columns="2" name="layoutgrid1"> 
+                                <wm-gridrow name="gridrow1"> 
+                                    <wm-gridcolumn colwidth="6" columnwidth="6" class="col-xs-6" name="gridcolumn1"> 
+                                        <wm-picture name="Picture" width="100%" picturesource="bind:Variables.SalesdbRepsData.dataSet.data[$i].picurl"></wm-picture> 
+                                    </wm-gridcolumn> 
+                                    <wm-gridcolumn colwidth="6" columnwidth="6" padding="unset 1.25em" class="col-xs-6" name="gridcolumn2"> 
+                                        <wm-label name="ID" caption="ID" class="text-muted p" margin="unset unset 0px unset" whitespace="nowrap"></wm-label> 
+                                        <wm-label name="Name" caption="bind:Variables.SalesdbRepsData.dataSet.name" class="h4" margin="0px unset" whitespace="nowrap"></wm-label> 
+                                        <wm-label name="JobTitle" caption="bind:Variables.SalesdbRepsData.dataSet.city" class="h5" margin="0px unset unset unset" whitespace="nowrap"></wm-label> 
+                                        <wm-label name="Department" caption="bind:Variables.SalesdbRepsData.dataSet.state" class="p text-muted" margin="unset unset 0px unset" whitespace="nowrap"></wm-label> 
+                                        <wm-label name="Location" caption="bind:Variables.SalesdbRepsData.dataSet.role" class="text-muted p" whitespace="nowrap"></wm-label> 
+                                        <wm-anchor name="PhoneNumber" caption="bind:Variables.SalesdbRepsData.dataSet.zip" class="h5" hyperlink="tel:" margin="0px unset" whitespace="nowrap"></wm-anchor> 
+                                        <wm-anchor name="EmailID" class="p text-muted" hyperlink="mailto://" caption="" whitespace="nowrap"></wm-anchor> 
+                                    </wm-gridcolumn> 
+                                </wm-gridrow> 
+                            </wm-layoutgrid> 
+                        </wm-card-content> 
+                    </wm-card> 
+                </wm-listtemplate> 
+            </wm-list> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>

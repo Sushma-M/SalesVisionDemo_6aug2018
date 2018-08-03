@@ -1,0 +1,19 @@
+<wm-partial name="leftnav" type="leftnav"> 
+    <wm-nav name="leftnavigation" type="pills" layout="stacked"> 
+        <wm-nav-item name="list_dashboard"> 
+            <wm-anchor caption="Dashboard" name="dashboardLink" iconclass="wi wi-bar-graph" on-click="Actions.goToPage_Main.invoke()"></wm-anchor> 
+        </wm-nav-item> 
+        <wm-nav-item name="list_order"> 
+            <wm-anchor caption="Sales Reps" name="orderLink" iconclass="wi wi-people-outline" on-click="Actions.goToPage_SalesReps.invoke()"></wm-anchor> 
+        </wm-nav-item> 
+        <wm-nav-item name="list_support"> 
+            <wm-anchor caption="Leads" name="supportLink" iconclass="wi wi-location-city" on-click="Actions.goToPage_Leads.invoke()"></wm-anchor> 
+        </wm-nav-item> 
+        <wm-nav-item name="nav_item4"> 
+            <wm-anchor name="anchor4" iconclass="wi wi-file" caption="Quotes" on-click="Actions.goToPage_QuotesByRep.invoke()"></wm-anchor> 
+        </wm-nav-item> 
+        <wm-nav-item name="nav_item5"> 
+            <wm-anchor name="anchor5" iconclass="wi wi-file" caption="Sales By Rep" on-click="Actions.goToPage_SalesByRep.invoke()"></wm-anchor> 
+        </wm-nav-item> 
+    </wm-nav> 
+</wm-partial>

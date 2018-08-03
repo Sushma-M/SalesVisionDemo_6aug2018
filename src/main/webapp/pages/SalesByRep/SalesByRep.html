@@ -1,0 +1,20 @@
+<wm-page pagetitle="Sales By Rep" name="page1"> 
+    <wm-header content="header" name="header1"></wm-header> 
+    <wm-top-nav content="topnav" name="top_nav1"></wm-top-nav> 
+    <wm-content name="content1"> 
+        <wm-left-panel columnwidth="2" content="leftnav" name="left_panel1"></wm-left-panel> 
+        <wm-page-content columnwidth="10" name="page_content1"> 
+            <wm-table name="executeSalesByRepTable1" title="" dataset="bind:Variables.SalesdbExecuteSalesByRep.dataSet" navigation="Basic"> 
+                <wm-table-column binding="id" caption="Id" edit-widget-type="number" type="long" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="entryDate" caption="Entry Date" edit-widget-type="date" type="date" datepattern="yyyy, MMM dd" formatpattern="toDate" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="productName" caption="Product Name" edit-widget-type="text" type="string" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="sales" caption="Sales" textalignment="right" edit-widget-type="number" type="long" formatpattern="toCurrency" currencypattern="USD" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="isRenewal" caption="Is Renewal" edit-widget-type="checkbox" type="boolean" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="city" caption="City" edit-widget-type="text" type="string" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="repName" caption="Rep Name" edit-widget-type="text" type="string" show="true" readonly="false"></wm-table-column> 
+                <wm-table-column binding="quoteId" caption="Quote Id" type="long" show="true" readonly="undefined"></wm-table-column> 
+            </wm-table> 
+        </wm-page-content> 
+    </wm-content> 
+    <wm-footer content="footer" name="footer1"></wm-footer> 
+</wm-page>
